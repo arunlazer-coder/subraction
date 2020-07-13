@@ -56,12 +56,12 @@ export default class App extends Component {
    }
 
   render() {
-    const { primes, randomNumber, max, showAnswers, answers } = this.state
+    const { max, showAnswers, answers } = this.state
     return (
       <div className="limiter">
           <div className="container-login100" style={{backgroundImage: 'url("images/bg-01.jpg")'}}>
             <div className="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
-            {max==0 ?
+            {max === 0 ?
               <form className="login100-form validate-form" onSubmit={(e) => this.show(e)}>
                 <span className="login100-form-title p-b-49">
                   Vishnu & Vishuva 
