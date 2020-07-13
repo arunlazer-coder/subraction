@@ -3,9 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { Slide, Zoom, Flip, Bounce } from 'react-toastify';
 ReactDOM.render(
   <React.StrictMode>
+    <ToastContainer  transition={Zoom}/>
     <App />
   </React.StrictMode>,
   document.getElementById('root')

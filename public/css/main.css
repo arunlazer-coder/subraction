@@ -1,5 +1,7 @@
 
 
+/* Password */
+
 
 
 /*//////////////////////////////////////////////////////////////////
@@ -677,4 +679,53 @@ td.text-right {
   -webkit-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
   -o-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
   -ms-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+}
+
+.loginImg{
+  height:300px;
+  width:200px;
+  display:flex;
+  flex-direction: row;
+  margin: 200px;
+}
+
+.loginImg img{
+  border-radius: 25px;
+  border: 3px solid greenyellow;
+  cursor:pointer;
+}
+
+.centered-modal.in {
+  display: flex !important;
+}
+.centered-modal .modal-dialog {
+  margin: auto;
+}
+
+.modal-dialog-centered{
+  margin-top:20%;
+ }
+
+ 
+
+@media only screen and (max-width: 450px) {
+  /* For mobile phones: */
+  .loginImg{
+    height:200px;
+    width:150px;
+    display:flex;
+    flex-direction: row;
+    margin: 50px;
+    margin-left: 10px;
+  }
+  
+  .loginImg img{
+    border-radius: 25px;
+    border: 3px solid #5395A0;
+    cursor:pointer;
+  }
+
+  .modal-dialog-centered{
+    margin-top:80%;
+   }
 }
