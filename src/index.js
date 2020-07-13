@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { Slide, Zoom, Flip, Bounce } from 'react-toastify';
+import { Zoom } from 'react-toastify';
 ReactDOM.render(
   <React.StrictMode>
     <ToastContainer  transition={Zoom}/>
