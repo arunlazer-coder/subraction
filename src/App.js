@@ -44,7 +44,7 @@ export default class App extends Component {
    show(e) {
     e.preventDefault();
     
-    this.setState({max:e.target.username.value}, () => {
+    this.setState({max:e.target.username.value ? e.target.username.value : 100}, () => {
     
       let answers = []
       for (let i = 0; i < 10; i++) {
@@ -68,7 +68,7 @@ export default class App extends Component {
                 </span>
                 <div className="wrap-input100 validate-input m-b-23" >
                   <span className="label-input100">Enter Maximum Number</span>
-                  <input className="input100" type="text" name="username" placeholder="Type your username" required/>
+                  <input className="input100" type="text" name="username" placeholder="Type your username" />
                   <span className="focus-input100" data-symbol="" />
                 </div>
                 
