@@ -17,10 +17,10 @@ export default class Login extends Component {
         this.setState({activeName:name, showPass:true})
     }
     loginCheck(){
-        if(this.state.activeName == 'v1' && this.state.otp == '1111'){
+        if(this.state.activeName === 'v1' && this.state.otp === '1111'){
             alert('Vishnu')
         }
-        else if(this.state.activeName == 'v2' && this.state.otp == '2222'){
+        else if(this.state.activeName === 'v2' && this.state.otp === '2222'){
             alert('Vishuva')
         }
         else{
@@ -32,10 +32,10 @@ export default class Login extends Component {
         return (
             <>
             <div className="loginImg" onClick={() => this.showPass('v1')}>
-                <img src={process.env.PUBLIC_URL+"/images/v1.jpeg"} data-toggle="modal" data-target="#myModal" ref={input => this.v1 = input} />
+                <img src={process.env.PUBLIC_URL+"/images/v1.jpeg"} data-toggle="modal" data-target="#myModal" ref={input => this.v1 = input} alt='img' />
             </div> 
             <div className="loginImg" onClick={() => this.showPass('v2')}>
-                <img src={process.env.PUBLIC_URL+"/images/v2.jpeg"} data-toggle="modal" data-target="#myModal" ref={input => this.v2 = input} />
+                <img src={process.env.PUBLIC_URL+"/images/v2.jpeg"} data-toggle="modal" data-target="#myModal" ref={input => this.v2 = input} alt='img' />
             </div> 
             {showPass && 
             <div className="modal fade modal-dialog-centered" id="myModal" role="dialog">
