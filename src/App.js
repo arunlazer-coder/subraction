@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Login from './components/Login';
+// import Login from './components/Login';
 import Subraction from './components/Subraction';
 
 export default class App extends Component {

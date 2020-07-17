@@ -19,7 +19,7 @@ export default class Subraction extends Component {
         var b  = Math.floor(this.random(0, this.state.max));
         const a1 = Math.max(a, b);
         const b1 = Math.min(a, b);
-        const c = symbol == '-' ? a1-b1 : a1+b1;
+        const c = symbol === '-' ? a1-b1 : a1+b1;
         
         const answer = {
                 "c"  : c,
@@ -31,7 +31,7 @@ export default class Subraction extends Component {
       maxValue(value){
         this.setState({"max":value})
       }
-      
+
       show(symbol) {
         let answers = []
         for (let i = 0; i < 10; i++) {
@@ -96,9 +96,6 @@ export default class Subraction extends Component {
 
 
 class Form extends Component {
-  constructor(props){
-    super(props)
-  }
   render() {
     return (
       <form className="login100-form validate-form" >
